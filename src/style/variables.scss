@@ -1,0 +1,32 @@
+
+// --- COLORS ---
+$a-red: #E61C0A;
+$a-blue: #1674CD;
+$a-green: #04843D;
+$font: #1D1D1D;
+
+$dark-gray: #696969;
+$medium-gray: #A9A9A9;
+$light-gray: #D3D3D3;
+$very-light-gray: #F4F4F4;
+
+$a-red-light: lighten($a-red, 10);
+$a-red-dark: darken($a-red, 20);
+$a-blue-light: lighten($a-blue, 10);
+$a-blue-dark: darken($a-blue, 20);
+$a-green-light: lighten($a-green, 10);
+$a-green-dark: darken($a-green, 20);
+
+$font-light: lighten($font, 30);
+$font-dark: darken($font, 30);
+
+// --- TYPOGRAPHY ---
+$body-font: 'Roboto', sans-serif;
+$heading-font: 'Open Sans', sans-serif;
+$h1-fontsize: 3.6rem !default;
+$h2-fontsize: 3.1rem !default;
+$h3-fontsize: 2.4rem !default;
+$h4-fontsize: 2rem !default;
+$h5-fontsize: 1.4rem !default;
+$h6-fontsize: 1rem !default;
+

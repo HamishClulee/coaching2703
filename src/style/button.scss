@@ -1,0 +1,87 @@
+// Shared styles
+$button-border-color: $a-blue;
+$button-border: 2px solid $button-border-color !default;
+$button-background-focus: transparent !default;
+$button-text-color: darken($a-blue, 10%);
+$button-font-size: 14px !default;
+
+$button-height: 49px !default;
+$button-padding: 0 46px !default;
+$button-radius: 2px !default;
+
+// Large buttons
+$button-large-font-size: 15px !default;
+$button-large-icon-font-size: 2.3rem !default;
+$button-large-height: $button-height * 1.5 !default;
+$button-floating-large-size: 56px !default;
+
+// Small buttons
+$button-small-font-size: 13px !default;
+$button-small-icon-font-size: 1.2rem !default;
+$button-small-height: $button-height * .9 !default;
+$button-floating-small-size: $button-height * .9 !default;
+
+$button-flat-color: $a-red !default;
+$button-flat-disabled-color: $light-gray !default;
+
+$button-floating-background: $a-blue !default;
+$button-floating-background-hover: $button-floating-background !default;
+$button-floating-color: #fff !default;
+$button-floating-size: 40px !default;
+$button-floating-radius: 50% !default;
+
+.button,
+.button-flat {
+    background-color: white;
+    border: $button-border;
+    border-radius: $button-radius;
+    display: inline-block;
+    height: $button-height;
+    line-height: $button-height;
+    padding: $button-padding;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent; // Gets rid of tap active state
+}
+
+.button,
+.button-floating {
+    &:focus {
+        background-color: darken($a-blue, 10%);
+        color: darken($a-blue, 80%);
+    }
+}
+.button {
+    text-decoration: none;
+    color: $button-text-color;
+    font-family: $body-font;
+    font-weight: bolder;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.button-large {
+    @extend .button;
+    height: $button-large-height;
+    line-height: $button-large-height;
+    font-size: $button-large-font-size;
+    padding: 0 28px;
+    .icon {
+        font-size: $button-large-icon-font-size;
+    }
+}
+
+.button-small {
+    @extend .button;
+    height: $button-small-height;
+    line-height: $button-small-height;
+    font-size: $button-small-font-size;
+    .icon {
+        font-size: $button-small-icon-font-size;
+    }  
+}
